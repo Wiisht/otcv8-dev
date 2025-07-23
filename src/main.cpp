@@ -51,9 +51,6 @@ int main(int argc, const char* argv[]) {
         g_lua.init();
         g_resources.encrypt(args.size() >= 3 ? args[2] : "");
         std::cout << "Encryption complete" << std::endl;
-#ifdef WIN32
-        MessageBoxA(NULL, "Encryption complete", "Success", 0);
-#endif
         return 0;
     }
 #endif
